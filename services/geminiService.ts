@@ -128,7 +128,8 @@ export const processTextForDictation = async (rawText: string, mode: Mode, langu
             properties: {
               display: { type: Type.STRING },
               spoken: { type: Type.STRING }
-            }
+            },
+            propertyOrdering: ["display", "spoken"]
           }
         }
       }
