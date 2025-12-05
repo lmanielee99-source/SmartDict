@@ -1,0 +1,8 @@
+{
+  "name": "SmatDict",
+  "description": "A self-managed dictation app for Chinese and English, featuring OCR, TTS, and custom recording capabilities.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

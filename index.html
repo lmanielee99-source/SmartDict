@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartDict 智能默書機</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Noto+Serif+TC:wght@400;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'paper': '#fdf6e3',
+              'paper-dark': '#eee8d5',
+              'ink': '#2c3e50',
+              'accent-pink': '#ff9a9e',
+              'accent-blue': '#a1c4fd',
+              'accent-green': '#84fab0',
+              'wood': '#8d6e63'
+            },
+            fontFamily: {
+              'sans': ['Quicksand', 'sans-serif'],
+              'serif': ['Noto Serif TC', 'serif'],
+              'fun': ['Comic Neue', 'cursive'],
+            },
+            backgroundImage: {
+              'book-pattern': "url('https://www.transparenttextures.com/patterns/cream-paper.png')"
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #8d6e63; /* Wood table background */
+      }
+      .book-shadow {
+        box-shadow: 
+          0 1px 1px rgba(0,0,0,0.15), 
+          0 10px 0 -5px #eee8d5, 
+          0 10px 1px -4px rgba(0,0,0,0.15), 
+          0 20px 0 -10px #e2d8c0, 
+          0 20px 1px -9px rgba(0,0,0,0.15);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
